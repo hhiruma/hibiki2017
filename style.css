@@ -1,0 +1,72 @@
+html,body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image: url('images/main/bg1.jpg');
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: none;
+    background-position: center;
+}
+
+#topPage{
+    width: 100%;
+    height: 100%;
+}
+
+#initLogo{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initLogo img{
+    width: 50%;
+}
+
+#initTitle{
+    color: white;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+#initTitle h1, #initTitle h3{
+    margin: 0;
+}
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+}
+
+#slideContainer {
+    width: 100%;
+    height: 300%;
+}
+
+.panel{
+    height: 33.3%;
+    width: 100%;
+    float: left;
+
+    overflow: scroll;
+}
