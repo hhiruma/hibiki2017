@@ -18,6 +18,9 @@
 		<script src="<?php echo get_template_directory_uri();?>/js/external_resources/ScrollMagic/TweenMax.min.js"></script>
 		<script src="<?php echo get_template_directory_uri();?>/js/external_resources/ScrollMagic/animation.gsap.js"></script>
 
+		<!-- bg switcher -->
+		<script src="<?php echo get_template_directory_uri();?>/js/external_resources/jquery.bgswitcher.js"></script>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

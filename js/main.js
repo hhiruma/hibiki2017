@@ -9,6 +9,9 @@ $(window).ready(()=>{
     setTimeout(()=>{
         $('#initTitle h1').fadeIn(1000);
     }, 2500);
+    setTimeout(()=>{
+        $('#scrollFromTop i').fadeIn(1000);
+    }, 4000);
 });
 
 $(()=>{
@@ -31,3 +34,21 @@ $(()=>{
         .addIndicators()
         .addTo(controller);
 });
+
+$(()=>{
+    $('a[href^="#"]').click(function(){
+        event.preventDefault();
+        const speed = 1000;
+        const href = $(this).attr("href");
+        const target = $(href == "#" || href == "" ? 'html' : href);
+        let position;
+        if(target.length){
+            position = target.offset().top;
+        } else {
+            console.log('cant find: '+target);
+        }
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+    });
+});
+

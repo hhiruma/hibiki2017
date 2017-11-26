@@ -1,0 +1,51 @@
+#topPage{
+    width: 100%;
+    height: 100%;
+}
+
+#initLogo{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+    top: 0px;
+    left: 0px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initLogo img{
+    width: 50%;
+}
+
+#initTitle{
+    color: white;
+    margin-bottom: 0;
+    padding-left: 50px;
+    padding-top: 100px;
+}
+
+#initTitle h1, #initTitle h3{
+    margin: 0;
+}
+
+#scrollFromTop{
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#scrollFromTop a i{
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    color: white;
+
+    cursor: pointer;
+}
