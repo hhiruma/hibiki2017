@@ -31,7 +31,8 @@ main{
 }
 
 .panel{
-    height: 33.3%;
+    position: relative;
+    height: 33.333%;
     width: 100%;
     float: left;
 
@@ -39,4 +40,5 @@ main{
 
     border-color: black;
     border: solid;
+    box-sizing: border-box;
 }

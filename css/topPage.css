@@ -31,20 +31,24 @@
     margin: 0;
 }
 
-#scrollFromTop{
+.scrollerTop{
     position: absolute;
-    float: left;
-    width: 100%;
-    height: 100%;
 
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    left: 50%;
+    top: 3%;
+    /* think this will be get rid of after implementing scroll related features */
 }
 
-#scrollFromTop a i{
+.scrollerBottom{
+    position: absolute;
+
+    left: 50%;
+    top: 90%;
+}
+
+.scrollerTop a i, .scrollerBottom a i{
     font-size: 3em;
-    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
     color: white;
 
     cursor: pointer;

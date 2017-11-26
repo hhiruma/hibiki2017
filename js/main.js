@@ -10,7 +10,7 @@ $(window).ready(()=>{
         $('#initTitle h1').fadeIn(1000);
     }, 2500);
     setTimeout(()=>{
-        $('#scrollFromTop i').fadeIn(1000);
+        $('.scrollerBottom i').fadeIn(1000);
     }, 4000);
 });
 
@@ -18,11 +18,11 @@ $(()=>{
     const controller = new ScrollMagic.Controller();
 
     const wipeAnimation = new TimelineMax()
-        .to("#slideContainer", 0.5, {z:-150, delay: 1})
-        .to("#slideContainer", 1, {y: "-33.3%"})
+        .to("#slideContainer", 0.5, {z:-150 }) //delay: maybe number of containers to wait
+        .to("#slideContainer", 1, {y: "-33.333%"})
         .to("#slideContainer", 0.5, {z: 0})
-        .to("#slideContainer", 0.5, {z:-150, delay: 1})
-        .to("#slideContainer", 1, {y: "-66.6%"})
+        .to("#slideContainer", 0.5, {z:-150})
+        .to("#slideContainer", 1, {y: "-66.666%"})
         .to("#slideContainer", 0.5, {z: 0});
     new ScrollMagic.Scene({
         triggerElement: "#pinContainer",
@@ -35,15 +35,24 @@ $(()=>{
         .addTo(controller);
 });
 
+/* code for scroller */
 $(()=>{
     $('a[href^="#"]').click(function(){
         event.preventDefault();
-        const speed = 1000;
+        let speed = 2000;
         const href = $(this).attr("href");
         const target = $(href == "#" || href == "" ? 'html' : href);
+        const h = $(window).height();
         let position;
         if(target.length){
-            position = target.offset().top;
+            if($(this).hasClass('scrollerForTop')){
+                position = target.offset().top;
+                speed=1000;
+            } else if($(this).hasClass('scrollUp')){
+                position = target.offset().top - h*1.5;
+            } else {
+                position = target.offset().top + h*1.5;
+            }
         } else {
             console.log('cant find: '+target);
         }
@@ -51,4 +60,10 @@ $(()=>{
         return false;
     });
 });
+/*
+in order to conrol the scrollnigs, we need to disallow them to scroll
+and add event listeners to make move when flick is detected
 
+js onscroll event
+check direction by comparing current and previous scrollTop
+*/

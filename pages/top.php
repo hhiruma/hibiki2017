@@ -2,8 +2,8 @@
     <div id="initLogo">
         <img src='<?php echo get_template_directory_uri();?>/images/main/logo.jpg'></img>
     </div>
-    <div id="scrollFromTop">
-        <a href="#pinContainer">
+    <div class="scrollerBottom">
+        <a href="#pinContainer" class="scrollerForTop">
             <i class="fa fa-caret-down" aria-hidden="true"></i>
         </a>
     </div>

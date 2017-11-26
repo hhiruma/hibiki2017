@@ -6,13 +6,13 @@
 
 	<div id="pinContainer">
 		<div id="slideContainer">
-			<div class="panel">
+			<div id="aboutUsContainer" class="panel">
 				<?php get_template_part('pages/aboutUs');?>
 			</div>
-			<div class="panel">
+			<div id="stagesContainer" class="panel">
 				<?php get_template_part('pages/stages');?>
 			</div>
-			<div class="panel">
+			<div id="contactContainer" class="panel">
 				<?php get_template_part('pages/contact');?>
 			</div>
 		</div>
