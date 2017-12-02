@@ -5,13 +5,13 @@
 		<section id="topContainer">
 			<?php get_template_part('pages/top'); ?>
 		</section>
-		<section id="aboutUsContainer">
+		<section>
 			<?php get_template_part('pages/aboutUs');?>
 		</section>
-		<section id="stagesContainer">
+		<section>
 			<?php get_template_part('pages/stages');?>
 		</section>
-		<section id="contactContainer">
+		<section>
 			<?php get_template_part('pages/contact');?>
 		</section>
 

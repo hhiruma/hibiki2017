@@ -1,0 +1,1 @@
+//script for flexslider is at main.js

@@ -14,10 +14,17 @@
 
 		<!-- onepage-scroll -->
 		<script src='<? echo get_template_directory_uri();?>/js/external_resources/jquery.onepage-scroll.js'></script>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/onepage-scroll.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/onepage-scroll.css">
 
 		<!-- bg switcher -->
 		<script src="<?php echo get_template_directory_uri();?>/js/external_resources/jquery.bgswitcher.js"></script>
+
+		<!-- anime.js -->
+		<script src="<?php echo get_template_directory_uri();?>/js/external_resources/anime.min.js"></script>
+
+		<!-- flex slider-->
+		<script src='<? echo get_template_directory_uri();?>/js/external_resources/jquery.flexslider.js'></script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/flexslider/flexslider.css">
 
 		<?php wp_head(); ?>
 	</head>
