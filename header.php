@@ -26,6 +26,9 @@
 		<script src='<? echo get_template_directory_uri();?>/js/external_resources/jquery.flexslider.js'></script>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/flexslider/flexslider.css">
 
+		<!-- hover.css -->
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/hover.css"></script>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

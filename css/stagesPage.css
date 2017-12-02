@@ -1,0 +1,79 @@
+#stagesContainer{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background: rgb(185,210,229); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(185,210,229,1) 0%, rgba(104,165,214,1) 60%, rgba(68,141,201,1) 85%, rgba(56,101,153,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(185,210,229,1) 0%,rgba(104,165,214,1) 60%,rgba(68,141,201,1) 85%,rgba(56,101,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(185,210,229,1) 0%,rgba(104,165,214,1) 60%,rgba(68,141,201,1) 85%,rgba(56,101,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d2e5', endColorstr='#386599',GradientType=0 ); /* IE6-9 */
+}
+
+#stagesContainer h1{
+    position: relative;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+
+    left: 10%;
+    top: 7%;
+    width: 80%;
+    height: 5%;
+}
+
+#stagesContainer #stagesShowContainer{
+    position: relative;
+    /* background-color: white; */
+    margin: 0;
+    padding: 0;
+
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 75%;
+
+    display: flex;
+}
+
+#stagesContainer #stagesShowContainer #stagesShowTabContainer{
+    position: relative;
+    /* background-color: rgb(218, 218, 218); */
+
+    width: 20%;
+    height: 100%;
+
+    overflow: scroll;
+}
+
+#stagesContainer #stagesShowContainer #stagesShowMainContainer{
+    background-color: white;
+    flex-grow: 9;
+
+    width: 80%;
+    height: 100%;
+
+    z-index: 100;
+    overflow: hidden;
+}
+
+#stagesShowTabContainer input + label{
+    width: 100%;
+    height: 3em;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+    border-radius: 10px;
+
+    margin: 0 0% 1em 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#stagesShowTabContainer input:checked + label{
+    background-color: white;
+}
+
+#stagesShowTabContainer label{
+}
