@@ -12,46 +12,46 @@ $(window).ready(()=>{
     setTimeout(()=>{
         $('.twitterWidget').fadeIn(1000);
     }, 3000);
+});
 
-    //starter for flexsldier (used on about us page)
-    let prevSlide;
-    $('#aboutUsDesc .flexslider').flexslider({
-        animation: 'slide',
-        slideshow: false,
-        animationLoop: false,
-        animationSpeed: 500,
-        before: function(slider){
-            $('#aboutUsImg.flexslider').flexslider(slider.animatingTo);
-            prevSlide = slider.currentSlide;
-            for(let i=0; i<3; i++){
+//starter for flexsldier (used on about us page)
+let prevSlide;
+$('#aboutUsDesc .flexslider').flexslider({
+    animation: 'slide',
+    slideshow: false,
+    animationLoop: false,
+    animationSpeed: 500,
+    before: function(slider){
+        $('#aboutUsImg.flexslider').flexslider(slider.animatingTo);
+        prevSlide = slider.currentSlide;
+        for(let i=0; i<3; i++){
+            $('#aboutUsSlides'+String(i+1)+' .toggleButton').trigger('click');
+            $('#aboutUsSlides'+String(i+1)+' .playButton').trigger('click');
+        }
+        console.log('prevSlide: ' + prevSlide);
+    },
+    after: function(slider){
+        for(let i=0; i<3; i++){
+            if(i !== slider.currentSlide){
                 $('#aboutUsSlides'+String(i+1)+' .toggleButton').trigger('click');
-                $('#aboutUsSlides'+String(i+1)+' .playButton').trigger('click');
             }
-            console.log('prevSlide: ' + prevSlide);
-        },
-        after: function(slider){
-            for(let i=0; i<3; i++){
-                if(i !== slider.currentSlide){
-                    $('#aboutUsSlides'+String(i+1)+' .toggleButton').trigger('click');
-                }
-            }
-            $('#aboutUsSlides'+String(prevSlide+1)+' .toggleButton').trigger('click');
         }
-    });
-    $('#aboutUsImg.flexslider').flexslider({
-        animation: 'fade',
-        slideshow: false,
-        animationLoop: false,
-        controlNav: false,
-        directionNav: false,
-        animationSpeed: 500,
-        before: function(slider){
-            $('#aboutUsDesc .flexslider .flex-direction-nav').hide();
-        },
-        after: function(slider){
-            $('#aboutUsDesc .flexslider .flex-direction-nav').show();
-        }
-    });
+        $('#aboutUsSlides'+String(prevSlide+1)+' .toggleButton').trigger('click');
+    }
+});
+$('#aboutUsImg.flexslider').flexslider({
+    animation: 'fade',
+    slideshow: false,
+    animationLoop: false,
+    controlNav: false,
+    directionNav: false,
+    animationSpeed: 500,
+    before: function(slider){
+        $('#aboutUsDesc .flexslider .flex-direction-nav').hide();
+    },
+    after: function(slider){
+        $('#aboutUsDesc .flexslider .flex-direction-nav').show();
+    }
 });
 
 // js for aboutUs
@@ -137,7 +137,6 @@ $("#container").onepage_scroll({
     afterMove: function(index) {
         //$("#aboutUsImg img").css("opacity", "0");
         if(index === 2){
-            console.log('trigger!');
             $('#aboutUsSlides1 .resetButton').trigger('click');
             $('#aboutUsSlides2 .resetButton').trigger('click');
             $('#aboutUsSlides3 .resetButton').trigger('click');
@@ -145,8 +144,9 @@ $("#container").onepage_scroll({
             $('#aboutUsSlides2 .toggleButton').trigger('click');
             $('#aboutUsSlides3 .toggleButton').trigger('click');
         } else{
-            $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
         }
+            $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
+            $('#aboutUsSlides1 img').css('opacity', 0);
     },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls
