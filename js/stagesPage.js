@@ -3,7 +3,8 @@ new Vue({
     data: {
         postsData: stagePosts,
         activeYears: [],
-        selectedYear: 0
+        selectedYear: 0,
+        selectedPostTitle: ""
     },
 
     methods: {
@@ -29,15 +30,22 @@ new Vue({
         },
         selectYear(activeYear) {
             this.selectedYear = activeYear;
+            $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
         },
         filterPostByDate(post) {
             return this.getActiveYear(post['date']) === this.selectedYear;
         },
         toggleModalVis(post) {
             post['modalVis'] = !post['modalVis'];
+        },
+        selectPost(titleStr){
+            this.selectedPostTitle = titleStr;
+        },
+        slideBack(){
+            $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
+            this.selectedPostTitle = '';
         }
     },
-
     created: function () {
         if (this.activeYears.length === 0) {
             this.pushAllYears(this.postsData);
@@ -50,4 +58,20 @@ new Vue({
         this.activeYears.sort(function (a, b) { return b - a; })
         this.activeYears = [...new Set(this.activeYears)];
     }
+});
+
+// flexslider
+$('#stagesShowMainContainer .flexslider').flexslider({
+    animation: 'slide',
+    slideshow: false,
+    animationLoop: false,
+    animationSpeed: 500,
+    controlNav: false,
+    directionNav: false,
+    before: function(slider){ },
+    after: function(slider){ }
+});
+
+$('#stagesShowMainContainer button#stageSelectedButton').click(()=>{
+    $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(1);
 });

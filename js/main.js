@@ -14,13 +14,6 @@ $(window).ready(()=>{
     }, 3000);
 });
 
-window.onbeforeunload = function () { location.hash=""; };
-
-$(window).on('load', function (){
-    location.hash='';
-    //alert('hello');
-})
-
 // one page scroll script
 $("#container").onepage_scroll({
     sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
@@ -43,7 +36,7 @@ $("#container").onepage_scroll({
         }
         $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsSlides1 img').css('opacity', 0);
-        location.hash="";
+        // location.hash="";
     },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls

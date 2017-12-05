@@ -8,14 +8,36 @@
             </template>
         </div>
         <div id="stagesShowMainContainer">
-            <template v-if="selectedYear === 0">
-                selected year
-            </template>
-            <template v-else>
-                <div v-for="postData in postsData" v-if="filterPostByDate(postData)">
-                    <div v-html="postData['content']"></div>
-                </div>
-            </template>
+            <div class="flexslider">
+                <ul class="slides">
+                    <li id="stagesSlides1">
+                        <div v-if="selectedYear === 0">
+                            selected year
+                        </div>
+                        <div v-else class="stagesThumbnailContainer">
+                            <template v-for="postData in postsData" v-if="filterPostByDate(postData)">
+                                <label for="stageSelectedButton">
+                                    <div class="stageThumbnail hvr-grow" @click="selectPost(postData['title'])">
+                                        {{ postData['title'] }}
+                                    </div>
+                                </label>
+                            </template>
+                        </div>
+                        <button id="stageSelectedButton" hidden>button</button>
+                    </li>
+                    <li id="stagesSlides2">
+                        <div id="stagesShowMainContent">
+                            <div id="stagesShowMainTopBar">
+                                <i class="fa fa-arrow-left" aria-hidden="true" @click="slideBack"></i>
+                                {{ selectedPostTitle }}
+                            </div>
+                            <template v-for="postData in postsData" v-if="postData['title'] === selectedPostTitle">
+                                <div v-html="postData['content']"></div>
+                            </template>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </div>
