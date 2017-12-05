@@ -24,17 +24,10 @@
 
 #initTitle{
     position: absolute;
-    color: white;
     margin-bottom: 0;
-    /* padding-left: 50px;
-    padding-top: 100px; */
 
-    left: 100px;
+    left: 50px;
     bottom: 30px;
-}
-
-#initTitle h1, #initTitle h3{
-    margin: 0;
 }
 
 .twitterWidget {

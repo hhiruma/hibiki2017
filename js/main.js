@@ -4,11 +4,8 @@ $(window).ready(()=>{
     }, 1000);
     setTimeout(()=>{
         $('#initTitle').fadeIn(1000);
-        $('#initTitle h3').fadeIn(1000);
+        $('#initTitle #topLogo').fadeIn(1000);
     }, 1500);
-    setTimeout(()=>{
-        $('#initTitle h1').fadeIn(1000);
-    }, 2500);
     setTimeout(()=>{
         $('.twitterWidget').fadeIn(1000);
     }, 3000);

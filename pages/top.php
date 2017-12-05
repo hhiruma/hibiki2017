@@ -3,8 +3,7 @@
         <img src='<?php echo get_template_directory_uri();?>/images/main/logo.jpg'></img>
     </div>
     <div id="initTitle" hidden>
-        <h3 hidden>早稲田大学和太鼓サークル</h3>
-        <h1 hidden>魁響</h1>
+		<img id="topLogo" src="<?php echo get_template_directory_uri();?>/images/main/topLogo.png" hidden><br>
 	</div>
 	<div class="twitterWidget" hidden>
 		<a class="twitter-timeline"  href="https://twitter.com/sakigake_hibiki" data-widget-id="354643685218066432" data-width="200" data-height="300" data-chrome="noheader nofooter" data-aria-polite="assertive">Twitter</a>
