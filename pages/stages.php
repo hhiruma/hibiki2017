@@ -11,27 +11,37 @@
             <div class="flexslider">
                 <ul class="slides">
                     <li id="stagesSlides1">
-                        <div v-if="selectedYear === 0">
-                            selected year
+                            init page
+                    </li>
+                    <li id="stagesSlides2">
+                        <div class="stagesTopBar">
+                            <i class="fa fa-arrow-left" aria-hidden="true" @click="slideBackTo(0)"></i>
+                            select stage
                         </div>
-                        <div v-else class="stagesThumbnailContainer">
+                        <div class="stagesThumbnailContainer">
                             <template v-for="postData in postsData" v-if="filterPostByDate(postData)">
                                 <label for="stageSelectedButton">
-                                    <div class="stageThumbnail hvr-grow" @click="selectPost(postData['title'])">
-                                        {{ postData['title'] }}
+                                    <div class="stageThumbnail hvr-grow" @click="selectPost(postData['title'])"
+                                    :style="'background-image: url(' + postData['thumbUrl'] + ');' + bgImgStyle">
+                                        <div class="stageThumbnailImg"
+                                        :style="'background-image: url(' + postData['thumbUrl'] + ');' + bgImgStyle">
+                                        </div>
+                                        <div class="stageThumbnailTitle" style="position: absolute; bottom: 3px; text-align: center; width: 100%">
+                                            {{ postData['title'] }}
+                                        </div>
                                     </div>
                                 </label>
                             </template>
                         </div>
                         <button id="stageSelectedButton" hidden>button</button>
                     </li>
-                    <li id="stagesSlides2">
+                    <li id="stagesSlides3">
                         <div id="stagesShowMainContent">
                             <div id="stagesShowMainTopBar">
-                                <i class="fa fa-arrow-left" aria-hidden="true" @click="slideBack"></i>
+                                <i class="fa fa-arrow-left" aria-hidden="true" @click="slideBackTo(1)"></i>
                                 {{ selectedPostTitle }}
                             </div>
-                            <template v-for="postData in postsData" v-if="postData['title'] === selectedPostTitle">
+                            <template class="stageShowContentHtml" v-for="postData in postsData" v-if="postData['title'] === selectedPostTitle">
                                 <div v-html="postData['content']"></div>
                             </template>
                         </div>

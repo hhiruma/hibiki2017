@@ -29,8 +29,9 @@ $("#container").onepage_scroll({
             $('#aboutUsSlides1 .playButton').trigger('click');
             $('#aboutUsSlides2 .toggleButton').trigger('click');
             $('#aboutUsSlides3 .toggleButton').trigger('click');
-        } else{
+        } else {
         }
+        $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsSlides1 img').css('opacity', 0);
         // location.hash="";

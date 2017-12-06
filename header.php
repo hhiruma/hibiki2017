@@ -29,6 +29,11 @@
 		<!-- hover.css -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/hover.css"></script>
 
+		<!-- glide.js -->
+		<script src='<? echo get_template_directory_uri();?>/js/external_resources/glide.js'></script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/glidejs/glide.core.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/glidejs/glide.theme.css">
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

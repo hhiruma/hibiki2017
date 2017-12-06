@@ -4,7 +4,8 @@ new Vue({
         postsData: stagePosts,
         activeYears: [],
         selectedYear: 0,
-        selectedPostTitle: ""
+        selectedPostTitle: "",
+        bgImgStyle: " background-size: cover; background-repeat: none; background-position: center center;"
     },
 
     methods: {
@@ -30,7 +31,7 @@ new Vue({
         },
         selectYear(activeYear) {
             this.selectedYear = activeYear;
-            $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
+            $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(1);
         },
         filterPostByDate(post) {
             return this.getActiveYear(post['date']) === this.selectedYear;
@@ -41,9 +42,14 @@ new Vue({
         selectPost(titleStr){
             this.selectedPostTitle = titleStr;
         },
-        slideBack(){
-            $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
-            this.selectedPostTitle = '';
+        slideBackTo(i){
+            $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(i);
+            if(i === 0){
+                $('#stagesShowTabContainer input[type="radio"]').prop('checked', false);
+            }
+            if(i === 1){
+                this.selectedPostTitle = '';
+            }
         }
     },
     created: function () {
@@ -57,6 +63,13 @@ new Vue({
         }
         this.activeYears.sort(function (a, b) { return b - a; })
         this.activeYears = [...new Set(this.activeYears)];
+
+        //get videoID of embeded youtube
+        for (post of this.postsData){
+            post['vidId'] = post['content'].match(/www\.youtube\.com.*rel=0/)[0].split('/')[2].split('?')[0];
+            post['thumbUrl'] = 'http://img.youtube.com/vi/' + post['vidId'] + '/0.jpg';
+            console.log(post['thumbUrl']);
+        }
     }
 });
 
@@ -73,5 +86,5 @@ $('#stagesShowMainContainer .flexslider').flexslider({
 });
 
 $('#stagesShowMainContainer button#stageSelectedButton').click(()=>{
-    $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(1);
+    $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(2);
 });
