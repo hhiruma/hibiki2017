@@ -22,6 +22,9 @@
                     <img class="img5" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/5.jpg">
                     <img class="img6" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/6.jpg">
                 </li>
+                <li id="aboutUsSlides4">
+                    fourth slide
+                </li>
             </ul>
     </div>
     <div id="aboutUsDesc">
@@ -29,18 +32,22 @@
         <div class="flexslider">
             <ul class="slides">
                 <li>
+                    魁響とは？
                     <?php
                         // has to fix post number
                         $post = get_post(29);
                         $post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
-                        echo $post_content;
+                        //echo $post_content;
                     ?>
                 </li>
                 <li>
-                    second page
+                    舞台について
                 </li>
                 <li>
-                    third page
+                    練習について
+                </li>
+                <li>
+                    各種イベントについて
                 </li>
             </ul>
         </div>
