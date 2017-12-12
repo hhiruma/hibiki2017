@@ -18,6 +18,7 @@
     border: solid 0.1px black;
 
     background-color: transparent;
+    z-index: 50;
 }
 
 #aboutUsImg img{
@@ -44,8 +45,23 @@
     padding: 2%;
 
     box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+    z-index: 100;
 }
 
 #aboutUsDesc .flexslider{
     height: 70%;
+}
+
+#aboutUsContainer > img#aboutUsBg{
+    position: absolute;
+    height: 75%;
+    bottom: 0;
+    z-index: 10;
+}
+#aboutUsContainer > img#aboutUsBgReverse{
+    position: absolute;
+    height: 75%;
+    top: 0;
+    right: 0px;
+    z-index: 10;
 }
