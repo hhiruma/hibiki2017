@@ -42,11 +42,13 @@ $('#aboutUsImg.flexslider').flexslider({
 const moveImg1 = anime({
     targets: "#aboutUsImg #aboutUsSlides1 img",
     translateX: function(target, index){
-        const arr = ["150%", "0%"];
+        // const arr = ["150%", "0%"];
+        const arr = ["150%", "-100%", "0%"];
         return arr[index];
     },
     translateY: function(target, index){
-        const arr = ["0%", "400px"];
+        // const arr = ["0%", "400px"];
+        const arr = ["0px", "0px", "-600px"];
         return arr[index];
     },
     autoplay: false,
@@ -54,19 +56,20 @@ const moveImg1 = anime({
     duration: 500,
     update: function (anim){
         //change opacity
-        document.querySelector('#aboutUsImg img.img1').style.opacity = String(anim.progress / 100);
-        document.querySelector('#aboutUsImg img.img2').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg11').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg12').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg13').style.opacity = String(anim.progress / 100);
     }
 });
 
 const moveImg2 = anime({
     targets: "#aboutUsImg #aboutUsSlides2 img",
     translateX: function(target, index){
-        const arr = ["150%", "0%"];
+        const arr = ["0%", "0%", "-100%", "170%"];
         return arr[index];
     },
     translateY: function(target, index){
-        const arr = ["0%", "400px"];
+        const arr = ["250px", "-580px", "0px", "0px"];
         return arr[index];
     },
     autoplay: false,
@@ -74,8 +77,10 @@ const moveImg2 = anime({
     duration: 500,
     update: function (anim){
         //change opacity
-        // document.querySelector('#aboutUsImg img.img3').style.opacity = String(anim.progress / 100);
-        // document.querySelector('#aboutUsImg img.img4').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg21').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg22').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg23').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg24').style.opacity = String(anim.progress / 100);
     }
 });
 

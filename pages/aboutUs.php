@@ -5,22 +5,25 @@
                     <button class="playButton" hidden></button>
                     <button class="toggleButton" hidden></button>
                     <button class="resetButton" hidden></button>
-                    <img class="img1" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide1/1.jpg">
-                    <img class="img2" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide1/2.jpg">
+                    <img id="aboutUsImg11" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide1/1.jpg">
+                    <img id="aboutUsImg12" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide1/2.jpg">
+                    <img id="aboutUsImg13" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide1/3.jpg">
                 </li>
                 <li id="aboutUsSlides2">
                     <button class="playButton" hidden></button>
                     <button class="toggleButton" hidden></button>
                     <button class="resetButton" hidden></button>
-                    <img class="img3" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide2/3.jpg">
-                    <img class="img4" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide2/4.jpg">
+                    <img id="aboutUsImg21" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide2/1.jpg">
+                    <img id="aboutUsImg22" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide2/2.jpg">
+                    <img id="aboutUsImg23" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide2/3.jpg">
+                    <img id="aboutUsImg24" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide2/4.jpg">
                 </li>
                 <li id="aboutUsSlides3">
                     <button class="playButton" hidden></button>
                     <button class="toggleButton" hidden></button>
                     <button class="resetButton" hidden></button>
-                    <img class="img5" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/5.jpg">
-                    <img class="img6" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/6.jpg">
+                    <img id="aboutUsImg5" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/5.jpg">
+                    <img id="aboutUsImg6" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/6.jpg">
                 </li>
                 <li id="aboutUsSlides4">
                     fourth slide
