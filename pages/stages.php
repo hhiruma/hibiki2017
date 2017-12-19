@@ -72,4 +72,5 @@
     const stagePosts = <?php echo json_encode($stagePostArr); ?>;
 </script>
 <script src="<?php echo get_template_directory_uri();?>/js/stagesPage.js"></script>
+<script src="<?php echo get_template_directory_uri();?>/js/stagesPage_bg.js"></script>
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/stagesPage.css">

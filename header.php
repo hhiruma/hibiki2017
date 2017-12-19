@@ -34,6 +34,10 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/glidejs/glide.core.css">
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/external_resources/glidejs/glide.theme.css">
 
+		<!-- p5.js -->
+		<script src="<?php echo get_template_directory_uri();?>/js/external_resources/p5.min.js"></script>
+        <script src="<?php echo get_template_directory_uri();?>/js/external_resources/p5.dom.min.js"></script>
+
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>

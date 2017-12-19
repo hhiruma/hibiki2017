@@ -10,6 +10,13 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9d2e5', endColorstr='#386599',GradientType=0 ); /* IE6-9 */
 }
 
+#stagesContainer canvas{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
 #stagesContainer h1{
     position: relative;
     background-color: transparent;
@@ -42,6 +49,7 @@
 
     width: 20%;
     height: 100%;
+    z-index: 100;
 
     overflow: scroll;
 }
