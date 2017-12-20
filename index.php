@@ -15,8 +15,8 @@
 			<?php get_template_part('pages/contact');?>
 		</section>
 
-		<?php get_template_part('pages/sidebar');?>
 	</div>
+	<?php get_template_part('pages/sidebar');?>
 </main>
 
 <?php get_footer(); ?>
