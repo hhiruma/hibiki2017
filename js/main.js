@@ -1,3 +1,5 @@
+const devStatus = true;
+
 $(window).ready(()=>{
     setTimeout(()=>{
         $('#initLogoContainer').fadeOut(1000);
@@ -23,18 +25,23 @@ $("#container").onepage_scroll({
     afterMove: function(index) {
         //$("#aboutUsImg img").css("opacity", "0");
         if(index === 2){
-            $('#aboutUsSlides1 .resetButton').trigger('click');
-            $('#aboutUsSlides2 .resetButton').trigger('click');
-            $('#aboutUsSlides3 .resetButton').trigger('click');
-            $('#aboutUsSlides1 .playButton').trigger('click');
+            $('#aboutUsSlides1 .resetButton ').trigger('click');
+            $('#aboutUsSlides2 .resetButton ').trigger('click');
+            $('#aboutUsSlides3 .resetButton ').trigger('click');
+            $('#aboutUsSlides1 .playButton  ').trigger('click');
             $('#aboutUsSlides2 .toggleButton').trigger('click');
             $('#aboutUsSlides3 .toggleButton').trigger('click');
-        } else {
+        } else if(index === 4){
+            $('#contactContainer .resetButton').trigger('click');
+            $('#contactContainer  .playButton').trigger('click');
         }
         $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsSlides1 img').css('opacity', 0);
-        // location.hash="";
+        $('#contactContainer #contactImg').css('opacity', 0);
+        if(!devStatus){
+            location.hash="";
+        }
     },   // This option accepts a callback function. The function will be called after the page moves.
     loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
     keyboard: true,                  // You can activate the keyboard controls

@@ -2,9 +2,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    background-color: rgb(5, 148, 74);
 }
 
 #formContainer{
@@ -17,6 +14,7 @@
     width: 50%;
     height: 90%;
     box-sizing: border-box;
+    z-index: 100;
 }
 
 #contactTitle{
@@ -81,4 +79,24 @@
 #contactMain form table tr td input, #contactMain form table tr td textarea{
     width: 100%;
     resize: none;
+}
+
+#contactContainer #contactImg{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 30%;
+    height: 213px;
+    padding: 10px;
+    background-color: white;
+}
+
+#contactContainer #contactImg:first-child{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+	background-size: cover;
+	background-repeat: none;
+    background-position: center center;
 }

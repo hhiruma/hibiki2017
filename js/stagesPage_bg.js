@@ -8,7 +8,7 @@ function draw(){
     stroke(255, 0.8);
     for(let i=0; i < 15; i++){
         strokeWeight(15-i);
-        //ellipse(0, 0, 500 + i*150, 500 + i*150);
+        ellipse(0, 0, 500 + i*150, 500 + i*150);
     }
 }
 

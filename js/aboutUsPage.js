@@ -38,7 +38,6 @@ $('#aboutUsImg.flexslider').flexslider({
     }
 });
 
-// js for aboutUs
 const moveImg1 = anime({
     targets: "#aboutUsImg #aboutUsSlides1 img",
     translateX: function(target, index){
