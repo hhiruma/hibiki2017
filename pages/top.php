@@ -8,6 +8,9 @@
 	<div class="twitterWidget" hidden>
 		<a class="twitter-timeline"  href="https://twitter.com/sakigake_hibiki" data-widget-id="354643685218066432" data-width="200" data-height="500" data-chrome="noheader nofooter" data-aria-polite="assertive">Twitter</a>
 	</div>
+	<div id="topPageDownArrow" hidden>
+		<i class="fa fa-chevron-down" aria-hidden="true" onclick="$('#container').moveDown();" style="cursor: pointer"></i>
+	</div>
 </div>
 
 <?php

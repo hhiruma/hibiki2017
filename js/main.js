@@ -11,6 +11,9 @@ $(window).ready(()=>{
     setTimeout(()=>{
         $('.twitterWidget').fadeIn(1000);
     }, 3000);
+    setTimeout(()=>{
+        $('#topPageDownArrow').fadeIn(1000);
+    }, 3000);
 });
 
 // one page scroll script
@@ -44,7 +47,7 @@ $("#container").onepage_scroll({
         $('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsSlides1 img').css('opacity', 0);
-        $('#contactContainer #contactImg').css('opacity', 0);
+        $('#contactContainer img').css('opacity', 0);
         if(!devStatus){
             location.hash="";
         }

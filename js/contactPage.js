@@ -1,7 +1,7 @@
 const contactMoveImg1 = anime({
-    targets: "#contactContainer #contactImg",
+    targets: "#contactContainer img",
     translateX: function(target, index){
-        return "100%";
+        return "250%";
     },
     translateY: function(target, index){
         return "0%";
@@ -11,18 +11,8 @@ const contactMoveImg1 = anime({
     duration: 500,
     update: function (anim){
         //change opacity
-        document.querySelector('#contactContainer #contactImg').style.opacity = String(anim.progress / 100);
+        document.querySelector('#contactContainer img').style.opacity = String(anim.progress / 100);
     }
-});
-
-console.log(contactImgUrlArr);
-$(()=>{
-    $('#contactContainer #contactImg div').bgswitcher({
-        images: contactImgUrlArr,
-        interval: 10000,
-        duration: 3000,
-        effect: 'drop'
-    })
 });
 
 document.querySelector('#contactContainer .playButton ').onclick = contactMoveImg1.play;

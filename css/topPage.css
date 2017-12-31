@@ -35,3 +35,11 @@
     right: 30px;
     top: 10px;
 }
+
+#topPageDownArrow{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    font-size: 2em;
+    color: white;
+}
