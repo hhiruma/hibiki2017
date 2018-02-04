@@ -42,22 +42,26 @@
 #aboutUsImg6{ left: 40%; top: -300px; }
 
 #aboutUsDesc {
-    position: relative;
-    left: 50%;
-    top: 10%;
+    position: absolute;
+    right: 50px;
+    top: 7%;
 
-    width: 40%;
-    height: 70%;
+    width: 400px;
+    height: 80%;
 
     margin: 0;
     padding: 2%;
 
-    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.4);
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
     z-index: 100;
+
 }
 
 #aboutUsDesc .flexslider{
-    height: 70%;
+    height: 83%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    padding: 10px;
 }
 
 #aboutUsContainer > img#aboutUsBg{

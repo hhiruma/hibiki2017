@@ -31,7 +31,9 @@
             </ul>
     </div>
     <div id="aboutUsDesc">
-        <h1>ABOUT US</h1>
+        <div style="font-size: 1.5em; padding-bottom: 10px; font-weight: bold" >
+            ABOUT US
+        </div>
         <div class="flexslider">
             <ul class="slides">
                 <li>

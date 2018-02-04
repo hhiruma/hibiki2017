@@ -4,10 +4,10 @@
     position: relative;
 
     background: #f8ffe8; /* Old browsers */
-background: -moz-linear-gradient(top, #f8ffe8 0%, #c8f7ad 46%, #6be031 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#6be031',GradientType=0 ); /* IE6-9 */
+    background: -moz-linear-gradient(top, #f8ffe8 0%, #c8f7ad 46%, #6be031 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#6be031',GradientType=0 ); /* IE6-9 */
 }
 
 #stagesContainer canvas{
@@ -58,7 +58,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', end
     width: 100%;
     height: 3em;
     text-align: center;
-    background-color: rgb(200, 200, 200);
+    background-color: rgb(17, 160, 1);
     border-radius: 10px;
 
     margin: 0 0% 1em 5%;
@@ -66,10 +66,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', end
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white;
 }
 
 #stagesShowTabContainer input:checked + label{
     background-color: white;
+    color: black;
 }
 
 #stagesContainer #stagesShowContainer #stagesShowMainContainer{
