@@ -1,4 +1,4 @@
-const devStatus = true;
+const devStatus = false;
 
 $(window).ready(()=>{
     setTimeout(()=>{

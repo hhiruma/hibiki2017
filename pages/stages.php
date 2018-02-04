@@ -17,7 +17,7 @@
                             $post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
                             echo $post_content;
                         ?>
-                        <hr style="width:90%">
+                        <br>
                         <?php
                             //have to edit post id
                             $post = get_post(220);
@@ -62,7 +62,9 @@
             </div>
         </div>
     </div>
+
 </div>
+<img id="stagesBg" src="<?php echo get_template_directory_uri();?>/images/stages/bg/bg.png"></img>
 
 <?php
     //get stages data
