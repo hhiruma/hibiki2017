@@ -11,7 +11,19 @@
             <div class="flexslider">
                 <ul class="slides">
                     <li id="stagesSlides1">
-                            init page
+                        <?php
+                            //have to edit post id
+                            $post = get_post(16);
+                            $post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
+                            echo $post_content;
+                        ?>
+                        <hr style="width:90%">
+                        <?php
+                            //have to edit post id
+                            $post = get_post(220);
+                            $post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
+                            echo $post_content;
+                        ?>
                     </li>
                     <li id="stagesSlides2">
                         <div class="stagesTopBar">

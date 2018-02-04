@@ -43,3 +43,24 @@
     font-size: 2em;
     color: white;
 }
+
+#nextStageMiniContainer {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+    background-color: rgb(42, 47, 51);
+    color: white;
+    height: 3em;
+    width: 300px;
+    font-size: 0.75em;
+    border-radius: 5px;
+    padding: 2px;
+    border: rgb(6, 45, 88) 3px solid;
+}
+
+span#nextStageInfoLinker {
+    position: absolute;
+    right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+}
