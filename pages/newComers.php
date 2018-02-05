@@ -19,6 +19,8 @@
             $post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
             echo $post_content;
         ?>
+        <img id="sakura1" src="<?php echo get_template_directory_uri();?>/images/newComers/sakura.png">
+        <img id="sakura2" src="<?php echo get_template_directory_uri();?>/images/newComers/sakura.png">
     </div>
 </div>
 
