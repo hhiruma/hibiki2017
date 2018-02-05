@@ -1,0 +1,50 @@
+#newComersContainer{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    background: #fcecfc; /* Old browsers */
+    background: -moz-linear-gradient(top, #fcecfc 0%, #f9cceb 69%, #ffb2e6 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #fcecfc 0%,#f9cceb 69%,#ffb2e6 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #fcecfc 0%,#f9cceb 69%,#ffb2e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ffb2e6',GradientType=0 ); /* IE6-9 */
+}
+
+#newComersBills {
+    position: absolute;
+    left: 10%;
+    top: 7%;
+
+    width: 30%;
+    height: 80%;
+
+    margin: 0;
+    background-color: transparent;
+    z-index: 50;
+    border: none;
+}
+
+#newComersBills img{
+    width: 100%;
+    margin: 0;
+    left: 0px;
+    top: 0px;
+}
+
+#newComersDesc{
+    position: absolute;
+    right: 50px;
+    top: 7%;
+
+    width: 400px;
+    height: 80%;
+
+    margin: 0;
+    padding: 2%;
+
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
+    z-index: 100;
+    border-radius: 5px;
+
+    background-color: rgba(255,255,255,0.5);
+}

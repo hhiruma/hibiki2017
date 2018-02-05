@@ -11,6 +11,12 @@
 		<section>
 			<?php get_template_part('pages/stages');?>
 		</section>
+		<!-- has to fix post number -->
+		<?php if (get_post_status(224) == 'publish'): ?>
+			<section>
+				<?php get_template_part('pages/newComers');?>
+			</section>
+		<?php endif; ?>
 		<section>
 			<?php get_template_part('pages/contact');?>
 		</section>
