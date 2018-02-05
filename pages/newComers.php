@@ -11,7 +11,7 @@
     </div>
     <div id="newComersDesc">
         <div style="font-size: 1.5em; padding-bottom: 10px; font-weight: bold">
-            NEW COMERS
+            JOIN US
         </div>
         <?php
             // has to fix post number
