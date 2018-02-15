@@ -1,4 +1,5 @@
-<div id="contactContainer" style="background-image:url('<?php echo get_template_directory_uri();?>/images/contact/bg.png')">
+<!-- <div id="contactContainer" style="background-image:url('<?php echo get_template_directory_uri();?>/images/contact/bg.png')"> -->
+<div id="contactContainer">
     <div id="formContainer">
         <div id="contactTitle">
             <h1>CONTACT</h1>
@@ -38,10 +39,10 @@
         </div>
     </div>
 
-    <img src="<?php echo get_template_directory_uri();?>/images/contact/mail.png">
+    <!-- <img src="<?php echo get_template_directory_uri();?>/images/contact/mail.png"> -->
 
-    <button class="playButton" hidden></button>
-    <button class="resetButton" hidden></button>
+    <!-- <button class="playButton" hidden></button>
+    <button class="resetButton" hidden></button> -->
 </div>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/contactPage.css">
