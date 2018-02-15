@@ -58,8 +58,8 @@
         </div>
     </div>
 
-    <img id="aboutUsBg" src="<?php echo get_template_directory_uri();?>/images/aboutUs/bg/bg.png"></img>
-    <img id="aboutUsBgReverse" src="<?php echo get_template_directory_uri();?>/images/aboutUs/bg/bg_reverse.png"></img>
+    <!-- <img id="aboutUsBg" src="<?php //echo get_template_directory_uri();?>/images/aboutUs/bg/bg.png"></img>
+    <img id="aboutUsBgReverse" src="<?php// echo get_template_directory_uri();?>/images/aboutUs/bg/bg_reverse.png"></img> -->
 </div>
 
 <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/aboutUsPage.css">
