@@ -64,7 +64,6 @@
     </div>
 
 </div>
-<!-- <img id="stagesBg" src="<?php //echo get_template_directory_uri();?>/images/stages/bg/bg.png"></img> -->
 
 <?php
     //get stages data
