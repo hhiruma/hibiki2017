@@ -1,5 +1,5 @@
 <div id="stagesContainer">
-    <h1>Stages</h1>
+    <h1 style="color: white;">Stages</h1>
     <div id="stagesShowContainer">
         <div id="stagesShowTabContainer">
             <template v-for="year in activeYears">
@@ -64,7 +64,7 @@
     </div>
 
 </div>
-<img id="stagesBg" src="<?php echo get_template_directory_uri();?>/images/stages/bg/bg.png"></img>
+<!-- <img id="stagesBg" src="<?php //echo get_template_directory_uri();?>/images/stages/bg/bg.png"></img> -->
 
 <?php
     //get stages data

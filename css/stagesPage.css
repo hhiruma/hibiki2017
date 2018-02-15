@@ -2,12 +2,15 @@
     width: 100%;
     height: 100%;
     position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
 
-    background: #f8ffe8; /* Old browsers */
-    background: -moz-linear-gradient(top, #f8ffe8 0%, #c8f7ad 46%, #6be031 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#6be031',GradientType=0 ); /* IE6-9 */
+    /*
+    background: #f8ffe8;
+    background: -moz-linear-gradient(top, #f8ffe8 0%, #c8f7ad 46%, #6be031 100%);
+    background: -webkit-linear-gradient(top, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%);
+    background: linear-gradient(to bottom, #f8ffe8 0%,#c8f7ad 46%,#6be031 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8ffe8', endColorstr='#6be031',GradientType=0 );
+    */
 }
 
 #stagesContainer canvas{
@@ -31,7 +34,6 @@
 
 #stagesContainer #stagesShowContainer{
     position: relative;
-    /* background-color: white; */
     margin: 0;
     padding: 0;
 
@@ -45,7 +47,6 @@
 
 #stagesContainer #stagesShowContainer #stagesShowTabContainer{
     position: relative;
-    /* background-color: rgb(218, 218, 218); */
 
     width: 20%;
     height: 100%;
@@ -58,7 +59,8 @@
     width: 100%;
     height: 3em;
     text-align: center;
-    background-color: rgb(17, 160, 1);
+    /* background-color: rgb(17, 160, 1); */
+    background-color: rgba(252, 252, 252, 0.9);
     border-radius: 10px;
 
     margin: 0 0% 1em 5%;
@@ -66,12 +68,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: black;
 }
 
 #stagesShowTabContainer input:checked + label{
-    background-color: white;
-    color: black;
+    /* background-color: white; */
+    background-color: rgba(82, 82, 82, 0.9);
+    color: white;
 }
 
 #stagesContainer #stagesShowContainer #stagesShowMainContainer{
@@ -89,7 +92,9 @@
 }
 
 #stagesShowMainContainer .flexslider{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    /* color: white; */
     margin: 0;
     position: relative;
     width: 100%;
@@ -120,7 +125,9 @@
 .stagesTopBar{
     position: absolute;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgba(82, 82, 82, 0.9);
+    color: white;
 }
 
 .stagesTopBar i{
@@ -172,7 +179,9 @@ li#stagesSlides3{
     text-align: center;
     vertical-align: bottom;
 
-    background-color: white;
+    /* background-color: white; */
+    background-color: rgba(82, 82, 82, 0.9);
+    color: white;
     box-sizing: border-box;
 }
 
