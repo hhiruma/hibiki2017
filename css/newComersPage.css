@@ -3,11 +3,13 @@
     height: 100%;
 
     position: relative;
-    background: #fcecfc; /* Old browsers */
-    background: -moz-linear-gradient(top, #fcecfc 0%, #f9cceb 69%, #ffb2e6 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #fcecfc 0%,#f9cceb 69%,#ffb2e6 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #fcecfc 0%,#f9cceb 69%,#ffb2e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ffb2e6',GradientType=0 ); /* IE6-9 */
+    /* background: #fcecfc;
+    background: -moz-linear-gradient(top, #fcecfc 0%, #f9cceb 69%, #ffb2e6 100%);
+    background: -webkit-linear-gradient(top, #fcecfc 0%,#f9cceb 69%,#ffb2e6 100%);
+    background: linear-gradient(to bottom, #fcecfc 0%,#f9cceb 69%,#ffb2e6 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcecfc', endColorstr='#ffb2e6',GradientType=0 ); */
+
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 #newComersBills {
