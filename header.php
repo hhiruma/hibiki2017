@@ -7,7 +7,8 @@
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 		<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>" type="text/css">
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/font-awesome.min.css">
+		<!-- <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/css/font-awesome.min.css"> -->
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> <!--new version of fontawesome-->
 
 		<script src='<? echo get_template_directory_uri();?>/js/external_resources/vue.js'></script>
 		<script src='<? echo get_template_directory_uri();?>/js/external_resources/jquery-3.2.1.min.js'></script>
