@@ -1,10 +1,3 @@
-const vm = new Vue({
-    el: "#sidebar2Button",
-    data: {
-        menuVisible: false
-    }
-})
-
 const menuPlay = anime({
     targets: "#sidebar2Container",
     translateX: "-400px",
