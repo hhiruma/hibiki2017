@@ -23,6 +23,7 @@
 
 	</div>
 	<?php get_template_part('pages/sidebar');?>
+	<?php get_template_part('pages/sidebar2');?>
 </main>
 
 <?php get_footer(); ?>
