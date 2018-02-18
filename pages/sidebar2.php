@@ -15,7 +15,7 @@
                 }
             ?>
             <?php foreach($pageList as $key => $page):?>
-                <div class="sidebar2Elem hvr-underline-from-left" onclick="scrollToPage(<?php echo $key;?>)">
+                <div class="sidebar2Elem hvr-underline-from-left" onclick="scrollToPage(<?php echo $key;?>);menuPlay.play();menuPlay.reverse();">
                     <?php echo $page?>
                 </div>
             <?php endforeach ?>
