@@ -19,6 +19,24 @@
                     <?php echo $page?>
                 </div>
             <?php endforeach ?>
+
+            <div id="sidebar2Contacts">
+                <div class="sidebar2ContactEl hvr-grow">
+                    <a href="https://twitter.com/sakigake_hibiki" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class="sidebar2ContactEl hvr-grow">
+                    <a href="https://www.facebook.com/%E6%97%A9%E7%A8%B2%E7%94%B0%E5%A4%A7%E5%AD%A6%E9%AD%81%E9%9F%BF-229672980453174/" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                </div>
+                <div class="sidebar2ContactEl hvr-grow">
+                    <a href="https://www.youtube.com/channel/UCJ2ijSO2X4wMwUBO7g2VerA" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
         </div>
         <div id="sidebar2SNS">
             <a class="twitter-timeline"  href="https://twitter.com/sakigake_hibiki" data-widget-id="354643685218066432" data-width="200" data-height="1000" data-chrome="noheader nofooter" data-aria-polite="assertive">Twitter</a>
