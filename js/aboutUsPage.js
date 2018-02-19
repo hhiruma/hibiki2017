@@ -1,10 +1,13 @@
 //starter for flexsldier (used on about us page)
 let prevSlide;
 $('#aboutUsDesc .flexslider').flexslider({
-    animation: 'slide',
+    // animation: 'slide',
+    animation: 'fade',
     slideshow: false,
     animationLoop: false,
     animationSpeed: 500,
+    controlNav: false,
+    directionNav: false,
     before: function(slider){
         $('#aboutUsImg.flexslider').flexslider(slider.animatingTo);
         prevSlide = slider.currentSlide;

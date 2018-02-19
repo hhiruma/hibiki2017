@@ -47,6 +47,7 @@ $("#container").onepage_scroll({
         $('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(0);
         $('#aboutUsSlides1 img').css('opacity', 0);
         $('#contactContainer img').css('opacity', 0);
+        $('#aboutUsDescTitle0').prop('checked', true);
         if(!devStatus){
             location.hash="";
         }

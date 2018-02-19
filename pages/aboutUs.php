@@ -34,6 +34,15 @@
         <div style="font-size: 1.5em; padding-bottom: 10px; font-weight: bold" >
             ABOUT US
         </div>
+        <div id="aboutUsDescControlNav">
+            <?php $aboutUsDescTitles = ['魁響とは？', '舞台について', '練習について', '各種イベントについて'];?>
+            <?php for ($i = 0; $i<4; $i++): ?>
+                <input id="aboutUsDescTitle<?php echo $i?>" type="radio" name="aboutUsDescSelectedTitle" hidden <?php if($i==0) echo checked?>>
+                <label class="aboutUsDescControlNavEl" for="aboutUsDescTitle<?php echo $i?>" style="cursor: pointer" onclick="$('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(<?php echo $i?>);" >
+                    <?php echo $aboutUsDescTitles[$i];?>
+                </label>
+            <?php endfor;?>
+        </div>
         <div class="flexslider">
             <ul class="slides">
                 <li>

@@ -43,7 +43,7 @@
 
 #aboutUsDesc {
     position: absolute;
-    right: 50px;
+    right: 70px;
     top: 7%;
 
     width: 400px;
@@ -58,11 +58,40 @@
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+#aboutUsDescControlNav {
+    position: absolute;
+    top: 12%;
+    width: 92%;
+    height:7%;
+    display: flex;
+}
+
+#aboutUsDescControlNav .aboutUsDescControlNavEl{
+    flex-grow: 1;
+    font-size: 0.7em;
+    margin: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#aboutUsDescControlNav input:checked+.aboutUsDescControlNavEl{
+    background-color: rgba(107, 107, 107, 0.7);
+}
+
 #aboutUsDesc .flexslider{
-    height: 83%;
+    position: absolute;
+    bottom: 40px;
+    left: 5%;
+    height: 70%;
+    width: 90%;
     background-color: rgba(255, 255, 255, 0.7);
     border: none;
     padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 #aboutUsContainer > img#aboutUsBg{
