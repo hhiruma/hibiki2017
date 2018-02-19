@@ -5,8 +5,8 @@
 
 	<img id="topLogo" src="<?php echo get_template_directory_uri();?>/images/main/topLogo.png" hidden><br>
 
-	<div id="topPageDownArrow" hidden>
-		<i class="fa fa-chevron-down" aria-hidden="true" onclick="$('#container').moveDown();" style="cursor: pointer"></i>
+	<div hidden id="topPageDownArrow" onclick="scrollToPage(1);" style="z-index: 1000;">
+		<i class="fas fa-long-arrow-alt-down" style="cursor: pointer;"></i>
 	</div>
 </div>
 
