@@ -1,5 +1,5 @@
 <div id="stagesContainer">
-    <h1 style="color: white;">Stages</h1>
+    <h1 style="color: white;">舞台一覧</h1>
     <div id="stagesShowContainer">
         <div id="stagesShowTabContainer">
             <template v-for="year in activeYears">

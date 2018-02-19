@@ -8,7 +8,7 @@
 
 #sidebarContainer #sidebar{
     position: absolute;
-    width: 65px;
+    width: 70px;
     /* background-color: white; */
     /* overflow: hidden; */
     border-radius: 5px;
@@ -17,7 +17,7 @@
 #sidebarContainer .sidebarElem{
     position: relative;
     background-color: rgba(255, 255, 255, 0.8);
-    width: 65px;
+    width: 70px;
     height: 2em;
     left: -5px;
     padding: 0.5em 1em;

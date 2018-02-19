@@ -2,9 +2,9 @@
     <div id="sidebar" hidden>
         <?php
             if(get_post_status(224) == 'publish'){
-                $pageList = ['TOP', 'ABOUT US', 'STAGES', 'JOIN US', 'CONTACT'];
+                $pageList = ['トップ', 'サークル情報', '舞台一覧', '新歓情報', 'お問い合わせ'];
             } else {
-                $pageList = ['TOP', 'ABOUT US', 'STAGES', 'CONTACT'];
+                $pageList = ['トップ', 'サークル情報', '舞台一覧', 'お問い合わせ'];
             }
         ?>
         <?php foreach($pageList as $key => $page):?>

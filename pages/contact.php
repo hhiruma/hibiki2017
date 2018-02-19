@@ -1,7 +1,7 @@
 <div id="contactContainer">
     <div id="formContainer">
         <div id="contactTitle">
-            <h1>CONTACT</h1>
+            <h1>お問い合わせ</h1>
         </div>
         <div id="contactMain">
             description
