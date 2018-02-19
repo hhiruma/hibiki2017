@@ -5,15 +5,14 @@ $(window).ready(()=>{
         $('#initLogoContainer').fadeOut(1000);
     }, 1000);
     setTimeout(()=>{
-        $('#initTitle').fadeIn(1000);
-        $('#initTitle #topLogo').fadeIn(1000);
-    }, 1500);
+        $('#topLogo').fadeIn(1500);
+    }, 2000);
     setTimeout(()=>{
         $('#topPageDownArrow').fadeIn(1000);
-    }, 2000);
+    }, 2500);
     setTimeout(()=>{
         $('#sidebar2Container').fadeIn(1000);
-    }, 2000);
+    }, 2500);
 });
 
 // one page scroll script

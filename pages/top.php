@@ -1,10 +1,9 @@
 <div id="topPage">
     <div id="initLogoContainer">
         <img src='<?php echo get_template_directory_uri();?>/images/main/logo.jpg'></img>
-    </div>
-    <div id="initTitle" hidden>
-		<img id="topLogo" src="<?php echo get_template_directory_uri();?>/images/main/topLogo.png" hidden><br>
 	</div>
+
+	<img id="topLogo" src="<?php echo get_template_directory_uri();?>/images/main/topLogo.png" hidden><br>
 
 	<div id="topPageDownArrow" hidden>
 		<i class="fa fa-chevron-down" aria-hidden="true" onclick="$('#container').moveDown();" style="cursor: pointer"></i>
