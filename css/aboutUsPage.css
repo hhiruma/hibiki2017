@@ -77,8 +77,13 @@
     align-items: center;
 }
 
+#aboutUsDescControlNav .aboutUsDescControlNavEl:hover{
+    background: white;
+}
+
 #aboutUsDescControlNav input:checked+.aboutUsDescControlNavEl{
     background-color: rgba(107, 107, 107, 0.7);
+    color: white;
 }
 
 #aboutUsDesc .flexslider{
