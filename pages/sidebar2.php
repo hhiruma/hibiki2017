@@ -4,9 +4,9 @@
     </div>
     <div id="sidebar2Main">
         <div id="sidebar2Menu">
-            <span>
+            <div id="sidebar2MenuTitle">
                 ページ一覧
-            </span>
+            </div>
             <?php
                 if(get_post_status(224) == 'publish'){
                     $pageList = ['TOP', 'ABOUT US', 'STAGES', 'JOIN US', 'CONTACT'];
@@ -19,6 +19,18 @@
                     <?php echo $page?>
                 </div>
             <?php endforeach ?>
+
+            <div id="nextStageMiniContainer" >
+                <?php
+                    //have to edit post id
+                    $post = get_post(181);
+                    $post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
+                    echo $post_content;
+                ?>
+                <span id="nextStageInfoLinker" onclick="scrollToPage(2)">詳細<span>
+            </div>
+
+            <hr style="width: 160px; left: 20px; position: absolute; bottom: 50px;">
 
             <div id="sidebar2Contacts">
                 <div class="sidebar2ContactEl hvr-grow">

@@ -20,10 +20,6 @@ $(window).ready(()=>{
     setTimeout(()=>{
         $('#test').css('display', 'none');
     }, 1);
-    setTimeout(()=>{
-        $('#nextStageInfoEllipsis').css('display', 'inline-block');
-        $('#nextStageInfoEllipsis').css('width', '220px');
-    }, 2);
 });
 
 // one page scroll script

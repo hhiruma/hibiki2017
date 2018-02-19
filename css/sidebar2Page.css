@@ -4,6 +4,7 @@
     height: 100%;
     right: -400px;
     top: 0px;
+    min-height: 500px;
 
     /* background-color: rgba(121, 121, 121, 0.5); */
     background: transparent;
@@ -52,8 +53,8 @@
     opacity: 0.8;
 }
 
-#sidebar2Menu span{
-    margin: 10px;
+#sidebar2Menu #sidebar2MenuTitle{
+    margin: 10px 10px 30px 10px;
     font-size: 25px;
 }
 
@@ -62,7 +63,7 @@
     /* background-color: rgba(0,0,0,0.6); */
     background: transparent;
     width: 170px;
-    margin: 10px 10px 10px 20px;
+    margin: 0px 10px 10px 20px;
     cursor: pointer;
     font-size: 20px;
 
@@ -87,4 +88,33 @@
     border-radius: 20px;
     box-sizing: border-box;
     color: white;
+}
+
+#nextStageMiniContainer {
+    position: absolute;
+    bottom: 60px;
+    height: 80px;
+    width: 180px;
+    font-size: 14px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#nextStageInfoEllipsis {
+    position: absolute;
+    left: 20px;
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+}
+
+span#nextStageInfoLinker {
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 12px;
 }

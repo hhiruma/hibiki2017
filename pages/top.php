@@ -6,16 +6,6 @@
 		<img id="topLogo" src="<?php echo get_template_directory_uri();?>/images/main/topLogo.png" hidden><br>
 	</div>
 
-	<div id="nextStageMiniContainer" hidden>
-		<?php
-			//have to edit post id
-			$post = get_post(181);
-			$post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
-			echo $post_content;
-		?>
-		<span id="nextStageInfoLinker" onclick="scrollToPage(2)">詳細<span>
-	</div>
-
 	<div id="topPageDownArrow" hidden>
 		<i class="fa fa-chevron-down" aria-hidden="true" onclick="$('#container').moveDown();" style="cursor: pointer"></i>
 	</div>
