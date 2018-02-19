@@ -48,6 +48,7 @@ $("#container").onepage_scroll({
         $('#aboutUsSlides1 img').css('opacity', 0);
         $('#contactContainer img').css('opacity', 0);
         $('#aboutUsDescTitle0').prop('checked', true);
+        $('#tabTop').prop('checked', true); //for stages page
         if(!devStatus){
             location.hash="";
         }

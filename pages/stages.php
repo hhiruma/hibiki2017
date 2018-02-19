@@ -2,6 +2,8 @@
     <h1 style="color: white;">舞台一覧</h1>
     <div id="stagesShowContainer">
         <div id="stagesShowTabContainer">
+            <input id="tabTop" type="radio" name="stagePageTabYear" checked hidden>
+            <label class="hvr-forward" for="tabTop" style="cursor: pointer" onclick="$('#stagesShowMainContainer .flexslider').data('flexslider').flexAnimate(0);">トップ</label>
             <template v-for="year in activeYears">
                 <input :id="'tab'+year" type="radio" name="stagePageTabYear" hidden>
                 <label @click="selectYear(year)" class="hvr-forward" :for="'tab'+year" style="cursor: pointer">{{ year }}年度</label>
@@ -27,8 +29,12 @@
                     </li>
                     <li id="stagesSlides2">
                         <div class="stagesTopBar">
-                            <i class="fa fa-arrow-left" aria-hidden="true" @click="slideBackTo(0)"></i>
-                            select stage
+                            <div class="stagesSlides2Arrow" @click="slideBackTo(0)">
+                                <i class="fas fa-arrow-circle-left"></i>
+                            </div>
+                            <div id="stagesSlides2YearTitle">
+                                {{ selectedYear }}年度舞台
+                            </div>
                         </div>
                         <div class="stagesThumbnailContainer">
                             <template v-for="postData in postsData" v-if="filterPostByDate(postData)">
@@ -50,8 +56,12 @@
                     <li id="stagesSlides3">
                         <div id="stagesShowMainContent">
                             <div id="stagesShowMainTopBar">
-                                <i class="fa fa-arrow-left" aria-hidden="true" @click="slideBackTo(1)"></i>
-                                {{ selectedPostTitle }}
+                                <div class="stagesSlides2Arrow" @click="slideBackTo(1)">
+                                    <i class="fas fa-arrow-circle-left"></i>
+                                </div>
+                                <div id="stagesSlides3StageTitle">
+                                    {{ selectedPostTitle }}
+                                </div>
                             </div>
                             <template class="stageShowContentHtml" v-for="postData in postsData" v-if="postData['title'] === selectedPostTitle">
                                 <div v-html="postData['content']"></div>
