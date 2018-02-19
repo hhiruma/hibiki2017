@@ -18,19 +18,7 @@
                     </tr>
                     <tr>
                         <td><span> ご用件 </span></td>
-                        <td style="padding: 10px 0 0 0;"><textarea rows="4"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><span> 日程 </span></td>
-                        <td><input type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><span> 会場情報（会場名、会場住所等） </span></td>
-                        <td><input type="text"></input></td>
-                    </tr>
-                    <tr>
-                        <td><span> 備考 </span></td>
-                        <td><textarea rows="4"></textarea></td>
+                        <td style="padding: 10px 0 0 0;"><textarea rows="12"></textarea></td>
                     </tr>
                 </table>
                 <input type="submit" value="フォーム送信"></input>
