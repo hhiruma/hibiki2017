@@ -9,9 +9,9 @@
 #newComersBills {
     position: absolute;
     left: 10%;
-    top: 7%;
+    top: 15%;
 
-    width: 30%;
+    width: 80%;
     height: 80%;
 
     margin: 0;
@@ -21,46 +21,16 @@
 }
 
 #newComersBills img{
-    width: 100%;
+    position: absolute;
     margin: 0;
-    left: 0px;
     top: 0px;
+    width: 45%;
 }
 
-#newComersDesc{
-    position: absolute;
-    right: 50px;
-    top: 7%;
-
-    width: 400px;
-    height: 80%;
-
-    margin: 0;
-    padding: 2%;
-
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.4);
-    z-index: 100;
-    border-radius: 5px;
-
-    background-color: rgba(255,255,255,0.5);
+#newComersBill1 {
+    left: 0px;
 }
 
-#sakura1{
-    position: absolute;
-    width: 100px;
-    bottom: 10px;
-    left: 20px;
-    transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-}
-
-#sakura2{
-    position: absolute;
-    width: 150px;
-    bottom: 50px;
-    right: 30px;
-    transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -webkit-transform: rotate(30deg);
+#newComersBill2 {
+    right: 0px;
 }
