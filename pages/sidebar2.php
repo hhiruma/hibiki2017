@@ -1,4 +1,4 @@
-<div id="sidebar2Container">
+<div id="sidebar2Container" hidden>
     <div id="sidebar2Button">
         <i class="fas fa-chevron-circle-left"></i>
     </div>

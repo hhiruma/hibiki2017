@@ -9,17 +9,11 @@ $(window).ready(()=>{
         $('#initTitle #topLogo').fadeIn(1000);
     }, 1500);
     setTimeout(()=>{
-        $('.twitterWidget').fadeIn(1000);
-    }, 3000);
-    setTimeout(()=>{
         $('#topPageDownArrow').fadeIn(1000);
-    }, 3000);
+    }, 2000);
     setTimeout(()=>{
-        $('#nextStageMiniContainer').fadeIn(1000);
-    }, 3000);
-    setTimeout(()=>{
-        $('#test').css('display', 'none');
-    }, 1);
+        $('#sidebar2Container').fadeIn(1000);
+    }, 2000);
 });
 
 // one page scroll script
