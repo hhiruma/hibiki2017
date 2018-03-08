@@ -1,6 +1,9 @@
 <div id="sidebar2Container" hidden>
     <div id="sidebar2Button">
         <i class="fas fa-chevron-circle-left"></i>
+        <div style="flex-direction: column; font-size:10px">
+            メニュー
+        </div>
     </div>
     <div id="sidebar2Main">
         <div id="sidebar2Menu">

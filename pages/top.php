@@ -5,8 +5,12 @@
 
 	<img id="topLogo" src="<?php echo get_template_directory_uri();?>/images/main/topLogo.png" hidden><br>
 
-	<div hidden id="topPageDownArrow" onclick="scrollToPage(1);" style="z-index: 1000;">
-		<i class="fas fa-long-arrow-alt-down" style="cursor: pointer;"></i>
+
+	<div hidden id="topPageDownArrow" onclick="scrollToPage(1);" style="z-index: 900;">
+		<div hidden style="font-size: 11px; background: rgba(0,0,0,0.2); border-radius: 5px">
+			スクロールしてください
+		</div>
+		<i hidden class="fas fa-long-arrow-alt-down " style="cursor: pointer; opacity: 0"></i>
 	</div>
 </div>
 

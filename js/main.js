@@ -8,7 +8,8 @@ $(window).ready(()=>{
         $('#topLogo').fadeIn(1500);
     }, 2000);
     setTimeout(()=>{
-        $('#topPageDownArrow').fadeIn(1000);
+        $('#topPageDownArrow div').fadeIn(1000);
+        $('#topPageDownArrow svg').animate({'opacity':'1'},{duration: 1000});
     }, 2500);
     setTimeout(()=>{
         $('#sidebar2Container').fadeIn(1000);
