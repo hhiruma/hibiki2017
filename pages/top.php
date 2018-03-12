@@ -12,6 +12,22 @@
 		</div>
 		<i hidden class="fas fa-long-arrow-alt-down " style="cursor: pointer; opacity: 0"></i>
 	</div>
+
+	<?php if(get_post_status(224) == 'publish'): ?>
+		<div hidden id="topPageNewComersVideoContainer">
+			<?php
+				//have to edit post id
+				$post = get_post(224);
+				$post_content = sanitize_post_field('post_content', $post->post_content, $post->ID, 'display');
+			?>
+			<div id="topPageNewComersVideoTitle">
+				☆魁響　新歓PV
+			</div>
+			<div id="topPageNewComersVideo">
+				<iframe width="100%" height="100%" src="<?php echo $post_content?>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			</div>
+		</div>
+	<?php endif; ?>
 </div>
 
 <?php

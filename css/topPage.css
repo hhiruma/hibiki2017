@@ -45,3 +45,31 @@
     align-items: center;
     justify-content: center;
 }
+
+#topPageNewComersVideoContainer {
+    position: absolute;
+    width: 330px;
+    height: 180px;
+    right: 30px;
+    bottom: 30px;
+    background: rgba(41, 47, 52, 0.8)
+}
+
+#topPageNewComersVideoTitle {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    left: 0;
+    color: white;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+#topPageNewComersVideo {
+    position: absolute;
+    width: 320px;
+    height: 150px;
+    bottom: 5px;
+    left: 5px;
+}

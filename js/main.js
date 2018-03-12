@@ -14,6 +14,9 @@ $(window).ready(()=>{
     setTimeout(()=>{
         $('#sidebar2Container').fadeIn(1000);
     }, 2500);
+    setTimeout(()=>{
+        $('#topPageNewComersVideoContainer').fadeIn(1000);
+    }, 3500);
 });
 
 // one page scroll script
