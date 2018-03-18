@@ -22,11 +22,17 @@
                     <button class="playButton" hidden></button>
                     <button class="toggleButton" hidden></button>
                     <button class="resetButton" hidden></button>
-                    <img id="aboutUsImg5" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/5.jpg">
-                    <img id="aboutUsImg6" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/6.jpg">
+                    <img id="aboutUsImg31" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/1.jpg">
+                    <img id="aboutUsImg32" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/2.jpg">
+                    <img id="aboutUsImg33" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide3/3.jpg">
                 </li>
                 <li id="aboutUsSlides4">
-                    fourth slide
+                    <button class="playButton" hidden></button>
+                    <button class="toggleButton" hidden></button>
+                    <button class="resetButton" hidden></button>
+                    <img id="aboutUsImg41" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide4/1.jpg">
+                    <img id="aboutUsImg42" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide4/2.jpg">
+                    <img id="aboutUsImg43" src="<?php echo get_template_directory_uri();?>/images/aboutUs/slide4/3.jpg">
                 </li>
             </ul>
     </div>
@@ -35,7 +41,7 @@
             サークル情報
         </div>
         <div id="aboutUsDescControlNav">
-            <?php $aboutUsDescTitles = ['魁響とは？', '舞台について', '練習について', '各種イベントについて'];?>
+            <?php $aboutUsDescTitles = array('魁響とは？', '舞台について', '練習について', '各種イベントについて');?>
             <?php for ($i = 0; $i<4; $i++): ?>
                 <input id="aboutUsDescTitle<?php echo $i?>" type="radio" name="aboutUsDescSelectedTitle" hidden <?php if($i==0) echo checked?>>
                 <label class="aboutUsDescControlNavEl" for="aboutUsDescTitle<?php echo $i?>" style="cursor: pointer" onclick="$('#aboutUsDesc .flexslider').data('flexslider').flexAnimate(<?php echo $i?>);" >

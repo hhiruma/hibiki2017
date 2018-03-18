@@ -11,14 +11,14 @@ $('#aboutUsDesc .flexslider').flexslider({
     before: function(slider){
         $('#aboutUsImg.flexslider').flexslider(slider.animatingTo);
         prevSlide = slider.currentSlide;
-        for(let i=0; i<3; i++){
+        for(let i=0; i<4; i++){
             $('#aboutUsSlides'+String(i+1)+' .toggleButton').trigger('click');
             $('#aboutUsSlides'+String(i+1)+' .playButton').trigger('click');
         }
         console.log('prevSlide: ' + prevSlide);
     },
     after: function(slider){
-        for(let i=0; i<3; i++){
+        for(let i=0; i<4; i++){
             if(i !== slider.currentSlide){
                 $('#aboutUsSlides'+String(i+1)+' .toggleButton').trigger('click');
             }
@@ -89,11 +89,11 @@ const moveImg2 = anime({
 const moveImg3 = anime({
     targets: "#aboutUsImg #aboutUsSlides3 img",
     translateX: function(target, index){
-        const arr = ["150%", "0%"];
+        const arr = ["-115%", "150%", "-100%"];
         return arr[index];
     },
     translateY: function(target, index){
-        const arr = ["0%", "400px"];
+        const arr = ["0px", "0px", "0px"];
         return arr[index];
     },
     autoplay: false,
@@ -101,17 +101,42 @@ const moveImg3 = anime({
     duration: 500,
     update: function (anim){
         //change opacity
-        // document.querySelector('#aboutUsImg img.img5').style.opacity = String(anim.progress / 100);
-        // document.querySelector('#aboutUsImg img.img6').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg31').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg32').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg33').style.opacity = String(anim.progress / 100);
+    }
+});
+
+const moveImg4 = anime({
+    targets: "#aboutUsImg #aboutUsSlides4 img",
+    translateX: function(target, index){
+        const arr = ["0%", "-100%", "80%"];
+        return arr[index];
+    },
+    translateY: function(target, index){
+        const arr = ["165px", "0px", "0px"];
+        return arr[index];
+    },
+    autoplay: false,
+    easing: "easeOutQuad",
+    duration: 500,
+    update: function (anim){
+        //change opacity
+        document.querySelector('#aboutUsImg41').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg42').style.opacity = String(anim.progress / 100);
+        document.querySelector('#aboutUsImg43').style.opacity = String(anim.progress / 100);
     }
 });
 
 document.querySelector('#aboutUsSlides1 .playButton').onclick = moveImg1.play;
 document.querySelector('#aboutUsSlides2 .playButton').onclick = moveImg2.play;
 document.querySelector('#aboutUsSlides3 .playButton').onclick = moveImg3.play;
+document.querySelector('#aboutUsSlides4 .playButton').onclick = moveImg4.play;
 document.querySelector('#aboutUsSlides1 .toggleButton').onclick = moveImg1.reverse;
 document.querySelector('#aboutUsSlides2 .toggleButton').onclick = moveImg2.reverse;
 document.querySelector('#aboutUsSlides3 .toggleButton').onclick = moveImg3.reverse;
+document.querySelector('#aboutUsSlides4 .toggleButton').onclick = moveImg4.reverse;
 document.querySelector('#aboutUsSlides1 .resetButton').onclick = moveImg1.reset;
 document.querySelector('#aboutUsSlides2 .resetButton').onclick = moveImg2.reset;
 document.querySelector('#aboutUsSlides3 .resetButton').onclick = moveImg3.reset;
+document.querySelector('#aboutUsSlides4 .resetButton').onclick = moveImg4.reset;

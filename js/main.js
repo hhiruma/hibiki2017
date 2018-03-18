@@ -40,9 +40,11 @@ $("#container").onepage_scroll({
             $('#aboutUsSlides1 .resetButton ').trigger('click');
             $('#aboutUsSlides2 .resetButton ').trigger('click');
             $('#aboutUsSlides3 .resetButton ').trigger('click');
+            $('#aboutUsSlides4 .resetButton ').trigger('click');
             $('#aboutUsSlides1 .playButton  ').trigger('click');
             $('#aboutUsSlides2 .toggleButton').trigger('click');
             $('#aboutUsSlides3 .toggleButton').trigger('click');
+            $('#aboutUsSlides4 .toggleButton').trigger('click');
         } else if(index === 4){
             $('#contactContainer .resetButton').trigger('click');
             $('#contactContainer  .playButton').trigger('click');

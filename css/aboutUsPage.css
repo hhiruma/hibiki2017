@@ -38,8 +38,13 @@
 #aboutUsImg23{ left:  100%; top:    0px; width: 80%; opacity: 0}
 #aboutUsImg24{ left: -100%; top:  190px; width: 50%; opacity: 0}
 
-#aboutUsImg5{ left: -100%; top: 200px; }
-#aboutUsImg6{ left: 40%; top: -300px; }
+#aboutUsImg31{ left: 110%; top: 50px; width: 60% }
+#aboutUsImg32{ left: -80%; top: 175px; width: 50% }
+#aboutUsImg33{ left: 110%; top: 285px; width: 75% }
+
+#aboutUsImg41{ left: 0%; top: -100px; width: 50% }
+#aboutUsImg42{ left: 100%; top: 110px; width: 45% }
+#aboutUsImg43{ left: -50%; top: 220px; width: 70% }
 
 #aboutUsDesc {
     position: absolute;
